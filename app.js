@@ -20,10 +20,10 @@ const upload= multer({storage: storage});
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
+  host: 'mysql-jelicia.alwaysdata.net',
+  user: 'jelicia',
   password: '',
-  database: 'musique_db'
+  database: 'jelicia_musique_db'
 });
 
 connection.connect((err) => {
