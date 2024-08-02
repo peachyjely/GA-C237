@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Musique App - Sign Up</title>
+  <style>
+    body { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      margin: 0; 
+      background-color: #f2f2f2; 
+      font-family: Arial, sans-serif; 
+    } 
+    .navbar-toggler { 
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .container { 
+      background-color: #fff; 
+      padding: 30px; 
+      border-radius: 5px; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+      text-align: center; 
+    }
+    input[type="email"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    input[type="text"], input[type="password"] { 
+      width: 100%; 
+      padding: 12px 20px; 
+      margin: 8px 0; 
+      display: inline-block; 
+      border: 1px solid #ccc; 
+      box-sizing: border-box; 
+      border-radius: 4px; 
+    }
+    button { 
+      background-color: #4CAF50; 
+      color: white; 
+      padding: 12px 20px; 
+      margin: 8px 0; 
+      border: none; 
+      cursor: pointer; 
+      width: 100%; 
+      border-radius: 4px; 
+    }
+    button:hover { 
+      opacity: 0.9; 
+    }
+    .btn-group { 
+      display: flex; 
+      justify-content: space-around; 
+      margin-top: 20px; 
+    }
+    .btn-group button { 
+      width: 48%; 
+    }
+    .signup { 
+      text-align: center; 
+      margin-top: 20px; 
+    }
+    .signup a { 
+      color: #4CAF50; 
+      text-decoration: none; 
+    }
+    .signup a:hover { 
+      text-decoration: underline; 
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <div class="text-center">
+      <form action="/signup" method="POST"></form>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <div class="btn-group">
+        <button type="submit">Sign Up</button>
+        <button type="button" onclick="window.location.href='/login'">Back to Login</button>
+      </div>
+    </form>
+    <div class="signup">
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>© 2024 Musique App</p>
+</footer>
+</html>
